@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang=ru>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Задание 6</title>
+        <meta charset="UTF-8">
+        <script src="calculator.js"></script>
+    </head>
+    <body>
+       <div class="container-fluid">
+       <div class="d-flex flex-column">
+           <header>
+               <h1>Магазин "Shoеs"</h1>
+           </header>
+            <h2>Корзина:</h2>
+            <form class="col-sm-12 col-md-7 p-1  mx-auto" name="calculator" onsubmit="return false;">
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Выберите тип товара :
+                    </div>
+                    <div class="col-5 col-lg-3">
+                        Выберите количество товара :
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        <select name="myselect">
+                            <option value="1">Ботфорты</option>
+                            <option value="2">Балетки</option>
+                            <option value="3">Туфли</option>
+                            <option value="4">Ботинки</option>
+                            <option value="5">Кроссовки</option>
+                        </select>
+                    </div>
+                    <div class="col-7 col-lg-4">
+                        <input id="count" type="number" value="1">
+                    </div>
+                    <div class="col-lg-5"></div>
+                    <br>
+                    <div class="row">
+                        <div id="radiobuttons">
+                            <div class="col-12 pl-4">
+                                <label><input type="radio" name="options" value="1">Экокожа</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="radio" name="options" value="2">Натуральная кожа</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="checkboxes">
+                            <div class="col-5 col-lg-3">
+                                Выберите дополнительные компоненты:
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="1">Стельки</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="2">Салфетки</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="3">Крем для обуви</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="price"></div>
+            <div class="col-sm-12 text-center p-1 order-md-5 mx-auto">
+                <footer>
+                    ©Kopanetskaya Anastasia 2022
+                </footer>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

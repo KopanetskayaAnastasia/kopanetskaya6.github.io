@@ -1,0 +1,13 @@
+h1 {
+    font-size: 30px;
+    color: rgb(68, 10, 119);
+}
+button {
+    background-color: rgb(68, 47, 255);
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+}
